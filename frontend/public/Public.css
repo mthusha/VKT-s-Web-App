@@ -1,0 +1,26 @@
+#scrollUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#scrollUp:hover {
+  background-color: #0056b3;
+}
+
+body.scrolled #scrollUp {
+  display: block;
+}
+
+.fa {
+  font-weight: 200px;
+  margin: 0 0 0 10px;
+}

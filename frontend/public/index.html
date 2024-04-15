@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8" />
+    <link rel="icon" href="icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link href="Public.css" rel="stylesheet" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>vtk.pvt</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 100) {
+            $('body').addClass('scrolled');
+          } else {
+            $('body').removeClass('scrolled');
+          }
+        });
+
+        $('#scrollUp').on('click', function(event) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: 0
+          }, 500); 
+        });
+      });
+    </script>
+
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <a id="scrollUp" href="#root">
+      <i  > <img  src="arrow.png" alt="" style="width: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(315deg); z-index: 1 ;"></i>
+    </a>
+   
+  </body>
+
+</html>
